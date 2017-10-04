@@ -1,0 +1,25 @@
+{
+	"message_text":"Hello this is from ruby api",
+	"data":{},
+	"error":{},
+	"attachments":[{
+		"image_url":"",
+		"thumb_url":"",
+		"color":"",
+		"text":"this is stupid text. Be careful 222",
+		"author_name":"",
+		"author_icon":"",
+		"author_link":"",
+		"ts":0,
+		"footer":"",
+		"footer_icon":"",
+		"pretext":"",
+		"title":"this is the title of field",
+		"title_link":"",
+		"status":0,
+		"fields":[],
+		"buttons":[]
+	}],
+	"logs":{},
+	"requester_application":209
+}
