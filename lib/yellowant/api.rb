@@ -22,14 +22,13 @@ module Yellowant
         v = eval(k.to_s)
         instance_variable_set("@#{k}", v) unless v.nil?
       end 
-      @api_url = "http://api.spendse.com/api/"
+      @api_url = "https://api.yellowant.com/api/"
 
     end
 
     def _get(endpoint, data={})
       body = JSON.generate(data)
       header = {'Content-type'=> "application/json", "Authorization"=>"Bearer #{@access_token}"}
-      puts header 
       HTTParty.get(@api_url+endpoint, :data=>body, :headers=>header )
     end
 
