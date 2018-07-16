@@ -29,7 +29,7 @@ module Messages
 			if !field.is_a? AttachmentClass
 				raise YellowantExceptions::YellowAntError, "Attachment must be 'AttachmentClass' class" 
 			else
-				@field << field.get_dict
+				@fields << field.get_dict
 			end
 		end
 
@@ -37,7 +37,7 @@ module Messages
 			if !field.is_a? ButtonClass
 				raise YellowantExceptions::YellowAntError, "Attachment must be 'AttachmentClass' class" 
 			else
-				@button << button.get_dict
+				@buttons << button.get_dict
 			end
 		end
 
