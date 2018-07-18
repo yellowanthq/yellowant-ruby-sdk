@@ -72,7 +72,7 @@ module Yellowant
 
     def send_webhook_message(integration_id, webhook_subscription_id, message)
       payload = {'webhook_id'=> webhook_subscription_id, 'requester_application'=> integration_id}
-      _post("user/application/webhook/#{webhookSubscriptionId}/", payload = payload.merge(message))
+      _post("user/application/webhook/#{webhook_subscription_id}/", payload = payload.merge(message))
     end
 
     def delete_integrtion(integration_id)
